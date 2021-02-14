@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+    </style>
+
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <form id="addQuestion">
+      <p><label for="title">Question</label><br />
+      <input type="text" id="text" name="text" size="50" value="" /></p>
+      <p><label for="tags">Tags</label><br />
+      <input type="text" id="tags" name="tags" size="50" value="" /></p>
+      <p>
+        <input id="save" type="submit" value="Save Question" />
+      </p>
+      <p>
+        <span id="status-display"></span>
+      </p>
+  </form>
+  </body>
+</html>
+
